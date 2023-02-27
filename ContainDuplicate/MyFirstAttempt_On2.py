@@ -3,13 +3,10 @@
 # Time: O(n^2), Space: O(1)
 class Solution(object):
     def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
         for i in nums: # O(n)
             if nums.count(i) > 1: # O(n) 
                 return True 
             else:
                 continue
         return False
+    
